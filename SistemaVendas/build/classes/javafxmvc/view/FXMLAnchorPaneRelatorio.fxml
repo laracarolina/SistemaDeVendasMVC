@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="388.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmvc.controller.FXMLAnchorPaneRelatoriosController">
+   <children>
+      <AnchorPane prefHeight="387.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="29.0" layoutY="34.0" prefHeight="24.0" prefWidth="114.0" text="Tipo de Relatório" />
+            <ComboBox fx:id="selecaoRelatorio" layoutX="164.0" layoutY="34.0" prefWidth="150.0" promptText="Selecione" />
+            <Label layoutX="29.0" layoutY="106.0" prefHeight="24.0" prefWidth="114.0" text="Formato Desejado" />
+            <CheckBox fx:id="pdf" layoutX="36.0" layoutY="160.0" mnemonicParsing="false" text="PDF" />
+            <CheckBox fx:id="html" layoutX="196.0" layoutY="160.0" mnemonicParsing="false" text="HTML" />
+            <CheckBox layoutX="36.0" layoutY="213.0" mnemonicParsing="false" text="XML" fx:id="xml" />
+            <CheckBox fx:id="doc" layoutX="196.0" layoutY="213.0" mnemonicParsing="false" text="DOC" />
+            <Label layoutX="36.0" layoutY="286.0" prefHeight="24.0" prefWidth="128.0" text="Nome do Arquivo" />
+            <TextField fx:id="nome" layoutX="168.0" layoutY="286.0" />
+            <Button fx:id="buttonVisualizarRelatorio" layoutX="388.0" layoutY="339.0" mnemonicParsing="false" style="-fx-background-color: #FFA500;" onAction="#handleButtonVisualizarRelatorio" text="Visualizar" />
+            <Button fx:id="buttonSalvarRelatorio" layoutX="488.0" layoutY="339.0" mnemonicParsing="false" style="-fx-background-color: #FFA500;" onAction="#handleButtonSalvarRelatorio" prefHeight="24.0" prefWidth="66.0" text="Salvar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
